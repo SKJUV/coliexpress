@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Coli Express</title>
+    <link rel="stylesheet" href="/styles/style1.css">
+    <link rel="stylesheet" href="/styles/inscription.css">
+</head>
+<body>
+    <header>
+        <h1>Coli express</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="test.html">Accueil</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="contact-button">Contactez Nous</a>
+    </header>
+
+    <section id="inscription-form">
+        <div class="form-container">
+            <h2>S'inscrire</h2>
+            <form id="signupForm" novalidate>
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required 
+                           minlength="8" 
+                           pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}"
+                           title="Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmer Mot de passe:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coli Express, Tous droits réservés</p>
+    </footer>
+
+    <script src="/scripts/inscription.js"></script>
+</body>
+</html>

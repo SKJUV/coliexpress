@@ -1,0 +1,13 @@
+{
+  "name": "coliexpress",
+  "version": "1.0.0",
+  "description": "Site de livraison Coli Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "bcryptjs": "^2.4.3"
+  }
+} 
